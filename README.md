@@ -27,11 +27,17 @@ CMD [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
 
 redis.conf(redis:3.0.6官方tar包的redis.conf，需要修改如下内容)
 daemonize no 
+
 pidfile /var/run/redis_6061.pid
+
 port 6061
+
 dbfilename dump_6061.rdb
+
 cluster-enabled yes
+
 cluster-config-file nodes-6061.conf
+
 cluster-node-timeout 15000
 剩余节点和Dockerfile 如节点一配置，修改配置中的6061为6062,6063,6064,6065,6066
 配置完成后
