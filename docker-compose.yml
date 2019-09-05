@@ -1,0 +1,36 @@
+redis-slave1:
+  build: ./slave1
+  restart: always
+  ports:
+   - 6061:6061
+   - 16061:16061
+redis-slave2:
+  build: ./slave2
+  restart: always
+  ports:
+   - 6062:6062
+   - 16062:16062
+redis-slave3:
+  build: ./slave3
+  restart: always
+  ports:
+   - 6063:6063
+   - 16063:16063
+redis-slave4:
+  build: ./slave4
+  restart: always
+  ports:
+   - 6064:6064
+   - 16064:16064
+redis-slave5:
+  build: ./slave5
+  restart: always
+  ports:
+   - 6065:6065
+   - 16065:16065
+redis-slave6:
+  build: ./slave6
+  restart: always
+  ports:
+   - 6066:6066
+   - 16066:16066
